@@ -1,8 +1,8 @@
-#Usage Examples
+# Usage Examples
 
 Here are some examples of Lua code that will run on the browser using the `lua51js` virtual machine:
 
-##Hello World
+## Hello World
 
     <?lua@client
     
@@ -11,7 +11,7 @@ Here are some examples of Lua code that will run on the browser using the `lua51
     
     ?>
 
-##DOM Interaction
+## DOM Interaction
 
 Currently, the lua51js mode can perform DOM interaction in limited ways.
 
@@ -39,7 +39,7 @@ For more advanced DOM manipulation, you will need to set a different VM such as 
 ?>
 ```
 
-##Both Client & Server Execution
+## Both Client & Server Execution
 
 ```
 <?lua@both
@@ -58,7 +58,7 @@ For more advanced DOM manipulation, you will need to set a different VM such as 
 ?>
 ```
 
-##Calling JS functions from Lua
+## Calling JS functions from Lua
 
 ```html
 <?lua@client?><!-- Serve the VM first-->
@@ -75,7 +75,7 @@ myalert('Hello World from Lua!')
 ?>
 ```
 
-##Adding a Library
+## Adding a Library
 
 ```html
 <?lua@client?><!-- Serve the VM first-->
@@ -105,7 +105,7 @@ myalert('Hello World from Lua!')
 ?>
 ```
 
-##Loading Lua Modules
+## Loading Lua Modules
 
 Lua@Client can load Lua files and modules via a standard `<script>` tag. All that is needed is to edit the Apache httpd.conf file and add:
 
@@ -129,7 +129,7 @@ require "pub.lua.mymodule"
 ?>
 ```
 
-###On-the-fly Conversion Using CGI-Lua
+### On-the-fly Conversion Using CGI-Lua
 
 To make a Lua file to provide itself as JS in CGI-Lua you can use:
 
@@ -142,7 +142,7 @@ end
 --[[Your Code Here]]
 ```
 
-##Script Tag Support
+## Script Tag Support
 
 ```html
 <?lua@client?><!-- Serve the VM first-->
